@@ -24,6 +24,11 @@ let nombreCompleto = "Sara Acuña Benavides"
 console.log(typeof nombreCompleto);
 let edadNombre = 12;
 
+// concatenar
+let nombres = "Sara";
+let ape =  "Acuña";
+let nombreape = nombres + ape;
+console.log("concatenar",nombreape);
 
 // CONVERSION DE TIPOS
 nombreCompleto = "23";
@@ -35,4 +40,15 @@ var cadena = numero.toString();
 console.log(cadena);
 
 // OPERADORES
+let numero1 = 10;
+let numero2 = 5;
+let resultado;
+resultado = numero1 + numero2;
+resultado = numero1 - numero2;
+resultado = numero1 / numero2;
+resultado = numero1 * numero2;
+resultado = numero1 % numero2;
+
+
+
 
