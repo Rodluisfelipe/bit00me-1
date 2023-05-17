@@ -13,17 +13,19 @@ function multiplicacion(num1, num2) {
     return num1 * num2;
 }
 
+// Función para realizar una division
 function division(num1, num2) {
     return num1 / num2;
 }
 
+// Función para realizar el modulo
 function modulo(num1, num2) {
     return num1 % num2;
 }
 
-// Solicitar los números al usuario
-let numero1 = parseFloat(prompt("Ingrese el primer número:"));
-let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+// Solicitar los dos números al usuario
+let numero1 = parseFloat(prompt("Ingrese el No.1:"));
+let numero2 = parseFloat(prompt("Ingrese el No.2:"));
 
 // RESULTADOS
 var resultadoSuma = suma(numero1, numero2);
@@ -39,4 +41,5 @@ alert("Resultados de las operaciones:\n\n" +
       "Multiplicación: " + resultadoMultiplicacion + "\n" +
       "Moduelo: " + resultadoModulo + "\n" +
       "División: " + resultadoDivision+"\n"+
-      "MUCHAS GRACIAS!!!");
+      "MUCHAS GRACIAS!!!"
+    );
