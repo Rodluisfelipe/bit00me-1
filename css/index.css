@@ -1,0 +1,164 @@
+nav{
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.logo-nav{
+    height: 90px;
+}
+
+.logo-responsive{
+    height: 42px;
+    cursor: pointer;
+}
+
+.button{
+    height: 40px;
+    width: 90px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #496940e2;
+    color:white;
+    cursor: pointer;
+}
+
+/* main */
+
+.container-image{
+    margin: 2rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #496940;
+    display: flex;
+    justify-content: space-around
+
+}
+ .image-presentacion{
+    width: 500px;
+    height: 700px;
+ }
+
+ .image-presentacion {
+  transition: transform 0.3s;
+}
+
+.image-presentacion:hover {
+  transform: scale(1.0);
+}
+
+.informacion-personal{
+    display: flex;
+    border: 1px solid #496940;
+    border-radius: 4px;
+}
+
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    color:#496940;
+    font-weight: bold;
+
+}
+
+strong{
+    color:#496940;
+    font-family: cursive;
+}
+
+
+.container-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.p-infor{
+    text-align: justify;
+    font-size: 30px;
+    min-width: 700px;
+    max-width: 1000px;
+}
+
+.informacion, p{
+    font-size: 30px;
+}
+
+.container-informacion-bienvenida{
+    padding-left: 2rem;
+}
+
+.circular-image {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.gustos{
+    justify-content: space-between;
+    background-color: #496940;
+    color:white;
+}
+
+h4{
+    color:white;
+    font-size: 50px;
+}
+
+
+.container-image-gustos{
+    padding: 20px;
+}
+.image-gustos{
+    width: 60px;
+}
+
+.descripcion{
+    margin: 0;
+}
+
+
+
+
+
+
+
+/* estilos para el footer */
+footer{
+    background-color: black;
+    height: 140px;
+}
+
+.container-main{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    justify-content: space-between
+}
+.container-footer{
+    display: flex;
+    color:white
+}
+.image-footer{
+    height: 60px;
+    cursor: pointer;
+}
+.logo-footer{
+    height: 41px;
+    cursor: pointer;
+}
+.li-footer{
+    list-style-type: none;
+    padding: 10px;  
+}
+.p-footer{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    margin: 0;
+}
