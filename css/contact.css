@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 nav{
     height: 100px;
     border-bottom: 1px solid #ccc;
@@ -27,7 +32,9 @@ nav{
 
 
 
-
+body{
+    margin: 0;
+}
 
 h3{
     font-size: 50px;
@@ -84,17 +91,21 @@ button:hover {
 
 
 /* estilos para el footer */
-footer{
-    background-color: black;
-    height: 140px;
-}
 
 .container-main{
+    background-color: black;
+    height: 140px;
     display: flex;
     align-items: center;
-    margin: 1rem;
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
 }
+
 .container-footer{
     display: flex;
     color:white
@@ -117,3 +128,82 @@ footer{
     font-weight: bold;
     margin: 0;
 }
+
+
+
+/* responsive */
+
+/* para celular iphone PSE */
+@media (max-width: 670px) and (min-width: 320px) {
+
+    /* diseños de la nav */
+    nav{
+        display: block;
+        height: 200px;
+        
+    }
+
+    .logo-nav{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    .group-button, .container-image-responsive{
+        text-align: center;
+    }
+
+
+    h3{
+        font-size: 25px;
+    }
+
+    main{
+        padding: 0 1rem;
+    }
+
+    .container-formulario{
+        max-width: 300px;
+        background-color: #496940;
+        color:white;
+    }
+
+    input, textarea{
+        background-color: white;
+        color:#496940
+    }
+
+    .container-main{
+        display: block;
+        min-height: 200px;
+        position: relative;
+        margin-top: 3rem;
+    }
+    
+    /* footer */
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
+  
+
+@media (max-width: 1024px) and (min-width: 760px){
+
+    nav{
+        margin: 0 1rem;
+    }
+
+    .hola{
+        width: 100px;
+        padding: 5px;
+        background-color: red;
+    }
+
+    /* footer */
+    .container-main{
+        height: 200px;
+    }
+}
+

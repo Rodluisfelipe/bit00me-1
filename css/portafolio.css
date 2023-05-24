@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
 /* nav */
 nav{
     height: 100px;
@@ -50,19 +56,26 @@ nav{
     font-weight: bold;
 }
 
+.container{
+    position: relative;
+}
+
 
 /* estilos para el footer */
-footer{
+.container-main{
     background-color: black;
     height: 140px;
-}
-
-.container-main{
     display: flex;
     align-items: center;
-    margin: 1rem;
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 0;
+    position: absolute;
+    bottom: 140;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
 }
+
 .container-footer{
     display: flex;
     color:white
@@ -84,6 +97,91 @@ footer{
     color:white;
     font-weight: bold;
     margin: 0;
+}
+
+
+/*  */
+@media (max-width: 670px) and (min-width: 320px) {
+
+    /* diseños de la nav */
+    nav{
+        display: block;
+        height: 200px;
+        
+    }
+
+    .logo-nav{
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+
+    .group-button, .container-image-responsive{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    main{
+        padding: 0 1rem;
+    }
+
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+
+    .container-main{
+        display: block;
+        min-height: 200px;
+        position: relative;
+        margin-top: 3rem;
+    }
+    
+    /* footer */
+    .container-footer{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+
+/* ipad */
+@media (max-width: 1024px) and (min-width: 760px){
+
+    nav{
+        margin: 0 1rem;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+
+    /* footer */
+    .container-main{
+        display: block;
+        min-height: 200px;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .container-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-footer{
+    font-size: 25px;
+    }
 }
 
 
